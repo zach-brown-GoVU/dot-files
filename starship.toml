@@ -1,0 +1,12 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[java]
+disabled = true
+
+[gradle]
+disabled = true
+
+[kotlin]
+symbol = "\ue81b"
