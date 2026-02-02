@@ -1,0 +1,8 @@
+shell-integration = fish
+command = /run/current-system/sw/bin/fish
+background-opacity = 0.9
+
+background = 000000
+foreground = ffffff
+
+font-family = JetBrains Mono
