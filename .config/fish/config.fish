@@ -4,9 +4,12 @@ if status is-interactive
   starship init fish | source
   enable_transience
 
+  # -- lazygit --
+  export XDG_CONFIG_HOME="$HOME/.config"
+
   # -- Nix --
   alias drs="sudo darwin-rebuild switch"
-  
+
   # -- zoxide --
   alias cd="z"
   zoxide init fish | source
