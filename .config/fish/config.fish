@@ -25,4 +25,7 @@ if status is-interactive
 
   # -- fzf --
   fzf --fish | source
+
+  # -- fastfetch --
+  fastfetch
 end
