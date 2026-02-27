@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./home/fastfetch.nix
     ./home/lazygit.nix
   ];
   # Home Manager state version
@@ -26,6 +27,7 @@
       cd = "z";
     };
     interactiveShellInit = ''
+      eval (/opt/homebrew/bin/brew shellenv)
       enable_transience
       thefuck --alias | source
       fastfetch
@@ -56,7 +58,6 @@
   home.packages = with pkgs; [
     vim
     jetbrains-toolbox
-    fastfetch
     obsidian
     spotify
     claude-code
