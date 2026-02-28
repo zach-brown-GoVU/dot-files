@@ -4,6 +4,7 @@
   imports = [
     ./home/fastfetch.nix
     ./home/lazygit.nix
+    ./home/starship.nix
   ];
   # Home Manager state version
   home.stateVersion = "23.05";
@@ -32,13 +33,6 @@
       thefuck --alias | source
       fastfetch
     '';
-  };
-
-  # Shell tool integrations (handle fish init automatically)
-  programs.starship = {
-    enable = true;
-    enableFishIntegration = true;
-    # No settings — config managed by stow (starship.toml)
   };
 
   programs.zoxide = {
