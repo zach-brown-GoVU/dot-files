@@ -12,7 +12,6 @@
     interactiveShellInit = ''
       eval (/opt/homebrew/bin/brew shellenv)
       enable_transience
-      thefuck --alias | source
       fastfetch
     '';
   };

@@ -9,7 +9,6 @@
   homebrew = {
     enable = true;
     casks = [
-      "discord"
     ];
     onActivation.cleanup = "zap";
   };

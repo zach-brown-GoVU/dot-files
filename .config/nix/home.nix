@@ -7,8 +7,11 @@
     ./home/fastfetch.nix
     ./home/fish.nix
     ./home/fzf.nix
+    ./home/ghostty.nix
     ./home/lazygit.nix
     ./home/starship.nix
+    ./home/thefuck.nix
+    ./home/zen.nix
     ./home/zoxide.nix
   ];
   # Home Manager state version
