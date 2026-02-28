@@ -2,9 +2,14 @@
 
 {
   imports = [
+    ./home/bat.nix
+    ./home/eza.nix
     ./home/fastfetch.nix
+    ./home/fish.nix
+    ./home/fzf.nix
     ./home/lazygit.nix
     ./home/starship.nix
+    ./home/zoxide.nix
   ];
   # Home Manager state version
   home.stateVersion = "23.05";
@@ -17,37 +22,6 @@
     EDITOR = "vim";
     XDG_CONFIG_HOME = "$HOME/.config";
   };
-
-  # Fish shell
-  programs.fish = {
-    enable = true;
-    shellAliases = {
-      drs = "sudo darwin-rebuild switch --flake ~/.config/nix";
-      ls = "eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions";
-      cat = "bat";
-      cd = "z";
-    };
-    interactiveShellInit = ''
-      eval (/opt/homebrew/bin/brew shellenv)
-      enable_transience
-      thefuck --alias | source
-      fastfetch
-    '';
-  };
-
-  programs.zoxide = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
-  programs.fzf = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
-  programs.bat.enable = true;
-
-  programs.eza.enable = true;
 
   home.packages = with pkgs; [
     vim
