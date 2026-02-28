@@ -2,17 +2,17 @@
 
 {
   imports = [
-    ./home/bat.nix
-    ./home/eza.nix
-    ./home/fastfetch.nix
-    ./home/fish.nix
-    ./home/fzf.nix
-    ./home/ghostty.nix
-    ./home/lazygit.nix
-    ./home/starship.nix
-    ./home/thefuck.nix
-    ./home/zen.nix
-    ./home/zoxide.nix
+    ./bat.nix
+    ./eza.nix
+    ./fastfetch.nix
+    ./fish.nix
+    ./fzf.nix
+    ./ghostty.nix
+    ./lazygit.nix
+    ./starship.nix
+    ./thefuck.nix
+    ./zen.nix
+    ./zoxide.nix
   ];
   # Home Manager state version
   home.stateVersion = "23.05";
