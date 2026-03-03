@@ -15,6 +15,7 @@
       "fastlane"
     ];
     casks = [
+      "ghostty"
     ];
     onActivation.cleanup = "zap";
   };

@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   programs.ghostty = {
     enable = true;
+    # On macOS, Ghostty is installed via Homebrew/App Store; on Linux, use nixpkgs
+    package = if pkgs.stdenv.isDarwin then null else pkgs.ghostty;
     settings = {
       shell-integration = "fish";
       command = "/run/current-system/sw/bin/fish";
