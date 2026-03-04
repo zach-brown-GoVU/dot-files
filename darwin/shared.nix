@@ -16,7 +16,6 @@
     ];
     casks = [
       "ghostty"
-      "zen"
     ];
     onActivation.cleanup = "zap";
   };
