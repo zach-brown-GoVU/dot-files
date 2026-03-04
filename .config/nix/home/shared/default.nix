@@ -10,6 +10,7 @@
     ./ghostty.nix
     ./lazygit.nix
     ./starship.nix
+    ./thefuck.nix
     ./zen.nix
     ./zoxide.nix
   ];
