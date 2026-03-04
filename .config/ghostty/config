@@ -1,0 +1,7 @@
+shell-integration = fish
+command = /run/current-system/sw/bin/fish
+background-opacity = 0.85
+
+theme = tokyo-night-moon
+
+font-family = JetBrains Mono

@@ -21,12 +21,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.zachbrown = {
-            imports = [
-              ./home.nix
-              ./home/discord.nix
-            ];
-          };
+          home-manager.users.zachbrown = import ./home.nix;
         }
         {
           system.configurationRevision = self.rev or self.dirtyRev or null;

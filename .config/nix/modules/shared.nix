@@ -12,9 +12,12 @@
   homebrew = {
     enable = true;
     brews = [
+      "thefuck"
       "fastlane"
     ];
     casks = [
+      "ghostty"
+      "zen"
     ];
     onActivation.cleanup = "zap";
   };
