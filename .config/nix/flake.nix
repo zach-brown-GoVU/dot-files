@@ -15,13 +15,18 @@
     # $ darwin-rebuild switch --flake .#Zachs-MacBook-Pro
     darwinConfigurations."Zachs-MacBook-Pro" = nix-darwin.lib.darwinSystem {
       modules = [
-        ./darwin/shared.nix
-        ./hosts/personal
+        ./modules/shared.nix
+        ./modules/personal.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.zachbrown = import ./hosts/personal/home.nix;
+          home-manager.users.zachbrown = {
+            imports = [
+              ./home.nix
+              ./home/discord.nix
+            ];
+          };
         }
         {
           system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -41,13 +46,13 @@
     # $ darwin-rebuild switch --flake .#VU-D4RW65L6QG
     darwinConfigurations."VU-D4RW65L6QG" = nix-darwin.lib.darwinSystem {
       modules = [
-        ./darwin/shared.nix
-        ./hosts/work
+        ./modules/shared.nix
+        ./modules/vu.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users."zacharyc.brown" = import ./hosts/work/home.nix;
+          home-manager.users."zacharyc.brown" = import ./home.nix;
         }
         {
           system.configurationRevision = self.rev or self.dirtyRev or null;
