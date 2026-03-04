@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./home/lazygit.nix
-  ];
   # Home Manager state version
   home.stateVersion = "23.05";
 
@@ -59,6 +56,7 @@
     fastfetch
     obsidian
     spotify
+    lazygit
     claude-code
     android-tools
     javaPackages.compiler.temurin-bin.jdk-25
