@@ -12,12 +12,13 @@
 brew 'act'            # Run GitHub Actions locally
 brew 'age'            # Modern encryption tool
 brew 'bat'            # Output highlighting (better cat)
+brew 'claude-code'    # AI coding assistant
 brew 'curl'           # HTTP client
 brew 'docker'         # Container platform CLI
 brew 'duf'            # Disk usage/free utility (better df)
 brew 'dust'           # Directory disk usage viewer (better du)
-brew 'eza'            # Listing files with info (better ls)
 brew 'exiftool'       # Read, write and modify exif data
+brew 'eza'            # Listing files with info (better ls)
 brew 'fastfetch'      # System info / neofetch alternative
 brew 'fd'             # Fast find alternative
 brew 'fish'           # User-friendly shell
@@ -29,7 +30,6 @@ brew 'jq'             # JSON parser and query tool
 brew 'lazygit'        # Terminal UI for git
 brew 'mise'           # Runtime version manager (node, python, etc.)
 brew 'node'           # Node.js
-brew 'claude-code'    # AI coding assistant
 brew 'pnpm'           # Fast, disk-efficient package manager
 brew 'rclone'         # Manage cloud storage
 brew 'ripgrep'        # Searching within files (better grep)
