@@ -29,7 +29,7 @@ brew 'jq'             # JSON parser and query tool
 brew 'lazygit'        # Terminal UI for git
 brew 'mise'           # Runtime version manager (node, python, etc.)
 brew 'node'           # Node.js
-brew 'opencode'       # AI coding assistant
+brew 'claude-code'    # AI coding assistant
 brew 'pnpm'           # Fast, disk-efficient package manager
 brew 'rclone'         # Manage cloud storage
 brew 'ripgrep'        # Searching within files (better grep)
@@ -47,6 +47,7 @@ brew 'zoxide'         # Auto-learning navigation (better cd)
 #############################################################
 
 cask 'alt-tab'                  # Better alt-tab window switcher
+cask 'android-studio'           # Android IDE
 cask 'discord'                  # Voice and text chat
 cask 'docker-desktop'           # Docker GUI and container management
 cask 'ghostty'                  # Terminal emulator
@@ -58,8 +59,10 @@ cask 'jellyfin'                 # Media server client
 cask 'keka'                     # File archiver and extractor
 cask 'obs'                      # Screen recording and streaming
 cask 'obsidian'                 # Knowledge base / notes
+cask 'postman'                  # API development and testing
 cask 'pycharm'                  # Python IDE
 cask 'raycast'                  # Spotlight alternative / launcher
+cask 'rider'                    # .NET IDE
 cask 'shottr'                   # Better screenshot utility
 cask 'slack'                    # Team messaging
 cask 'spotify'                  # Music streaming
