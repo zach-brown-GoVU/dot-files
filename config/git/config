@@ -4,7 +4,7 @@
 [user]
     name = Zach Brown
     signingkey = ~/.ssh/id_ed25519.pub
-    email = bbrown64506@gmail.com
+    email = zacharyc.brown@veteransunited.com
 
 [gpg]
     format = ssh
@@ -26,6 +26,18 @@
 
 [merge]
     conflictStyle = zdiff3
+
+[rerere]
+    enabled = true
+
+[fetch]
+    prune = true
+
+[pull]
+    rebase = true
+
+[diff]
+    algorithm = histogram
 
 [url "git@github.com:"]
     insteadOf = https://github.com/
