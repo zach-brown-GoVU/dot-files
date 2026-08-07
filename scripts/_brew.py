@@ -68,9 +68,16 @@ def _brew_update() -> None:
 
 
 def _brew_bundle() -> None:
-    """Install packages from the dotfiles Brewfile."""
+    """Install packages from the dotfiles Brewfile.
+
+    Failures here are logged but not raised — a single broken formula or cask
+    shouldn't abort the rest of the sync (stow, ssh, shell setup, etc.).
+    """
     logger.info(f"Installing packages from {_BREWFILE}")
-    run_shell_command(f"brew bundle --file={_BREWFILE}")
+    try:
+        run_shell_command(f"brew bundle --file={_BREWFILE}")
+    except RuntimeError as exception:
+        logger.warning(f"brew bundle reported failures, continuing: {exception}")
 
 
 def _brew_cleanup() -> None:
