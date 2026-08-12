@@ -65,6 +65,7 @@ cask 'handbrake-app'            # Video transcoder
 cask 'hiddenbar'                # Hide / show menubar icons
 cask 'iina'                     # Media player
 cask 'keka'                     # File archiver and extractor
+cask 'microsoft-teams'          # Team messaging and video calls
 cask 'obs'                      # Screen recording and streaming
 cask 'obsidian'                 # Knowledge base / notes
 cask 'postman'                  # API development and testing
