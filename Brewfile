@@ -40,6 +40,7 @@ brew 'lazygit'        # Terminal UI for git
 brew 'mise'           # Runtime version manager (node, python, etc.)
 brew 'node@20'        # Node.js 20 LTS
 brew 'pnpm'           # Fast, disk-efficient package manager
+brew 'powershell'     # Powershell
 brew 'rclone'         # Manage cloud storage
 brew 'ripgrep'        # Searching within files (better grep)
 brew 'speedtest'      # Official Ookla speedtest CLI
@@ -69,7 +70,6 @@ cask 'microsoft-teams'          # Team messaging and video calls
 cask 'obs'                      # Screen recording and streaming
 cask 'obsidian'                 # Knowledge base / notes
 cask 'postman'                  # API development and testing
-cask 'powershell'               # Cross-platform shell
 cask 'pycharm'                  # Python IDE
 cask 'raycast'                  # Spotlight alternative / launcher
 cask 'rider'                    # .NET IDE
